@@ -25,7 +25,7 @@ public class Tend {
         // Create a container view
         let containerView = UIView()
         containerView.translatesAutoresizingMaskIntoConstraints = false
-        containerView.backgroundColor = .red // Adjust the color if needed
+        containerView.backgroundColor = .blue // Adjust the color if needed
 
         // Create a label
         let label = UILabel()
