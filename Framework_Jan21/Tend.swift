@@ -22,10 +22,17 @@ public class Tend {
     }
 
     public func addViewAndLabel(to parentView: UIView, text: String) {
+        // 🛑 Remove old subviews before adding new ones
+        for subview in parentView.subviews {
+            if subview is UILabel || subview is UIView {
+                subview.removeFromSuperview()
+            }
+        }
+
         // Create a container view
         let containerView = UIView()
         containerView.translatesAutoresizingMaskIntoConstraints = false
-        containerView.backgroundColor = .blue // Adjust the color if needed
+        containerView.backgroundColor = .blue // Ensure background color is updated
 
         // Create a label
         let label = UILabel()
@@ -33,7 +40,7 @@ public class Tend {
         label.text = text
         label.textColor = .black
         label.textAlignment = .center
-        label.font = UIFont.systemFont(ofSize: 16) // Adjust the font size if needed
+        label.font = UIFont.systemFont(ofSize: 16)
 
         // Add label to the container view
         containerView.addSubview(label)
@@ -56,7 +63,10 @@ public class Tend {
             label.leadingAnchor.constraint(greaterThanOrEqualTo: containerView.leadingAnchor, constant: 8),
             label.trailingAnchor.constraint(lessThanOrEqualTo: containerView.trailingAnchor, constant: -8)
         ])
+
+        print("✅ UI đã được cập nhật với màu mới.")
     }
+
 }
 
 
