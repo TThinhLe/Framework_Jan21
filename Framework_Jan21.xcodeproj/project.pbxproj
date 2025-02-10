@@ -7,17 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E19592BF2D3F576E00E2D536 /* Framework_Jan21.docc in Sources */ = {isa = PBXBuildFile; fileRef = E19592BE2D3F576E00E2D536 /* Framework_Jan21.docc */; };
-		E19592C02D3F576E00E2D536 /* Framework_Jan21.h in Headers */ = {isa = PBXBuildFile; fileRef = E19592BD2D3F576E00E2D536 /* Framework_Jan21.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E19592C92D3F578A00E2D536 /* Tend.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19592C82D3F578A00E2D536 /* Tend.swift */; };
 		E19B43692D3F68DD008C3E37 /* version.json in Resources */ = {isa = PBXBuildFile; fileRef = E19B43682D3F68DD008C3E37 /* version.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E19592BA2D3F576E00E2D536 /* Framework_Jan21.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Framework_Jan21.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E19592BD2D3F576E00E2D536 /* Framework_Jan21.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Framework_Jan21.h; sourceTree = "<group>"; };
-		E19592BE2D3F576E00E2D536 /* Framework_Jan21.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Framework_Jan21.docc; sourceTree = "<group>"; };
-		E19592C82D3F578A00E2D536 /* Tend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tend.swift; sourceTree = "<group>"; };
 		E19B43682D3F68DD008C3E37 /* version.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = version.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -36,7 +30,6 @@
 			isa = PBXGroup;
 			children = (
 				E19B43682D3F68DD008C3E37 /* version.json */,
-				E19592BC2D3F576E00E2D536 /* Framework_Jan21 */,
 				E19592BB2D3F576E00E2D536 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,16 +42,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E19592BC2D3F576E00E2D536 /* Framework_Jan21 */ = {
-			isa = PBXGroup;
-			children = (
-				E19592BD2D3F576E00E2D536 /* Framework_Jan21.h */,
-				E19592BE2D3F576E00E2D536 /* Framework_Jan21.docc */,
-				E19592C82D3F578A00E2D536 /* Tend.swift */,
-			);
-			path = Framework_Jan21;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -66,7 +49,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E19592C02D3F576E00E2D536 /* Framework_Jan21.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +121,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E19592C92D3F578A00E2D536 /* Tend.swift in Sources */,
-				E19592BF2D3F576E00E2D536 /* Framework_Jan21.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
